@@ -1,4 +1,4 @@
-class AddAudioFeatures < ActiveRecord::Migration[5.1]
+class AddAudioFeatures < ActiveRecord::Migration[6.0][5.1]
   def change
     create_table :audio_features do |t|
       t.references(:asset, index: true)

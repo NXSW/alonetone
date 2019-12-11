@@ -1,4 +1,4 @@
-class AddListensPerDayToAsset < ActiveRecord::Migration
+class AddListensPerDayToAsset < ActiveRecord::Migration[6.0]
   def self.up
     add_column :assets, :listens_per_day, :float, :default => 0
     add_index 'assets', ['user_id','listens_per_day']

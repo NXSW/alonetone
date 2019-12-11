@@ -1,4 +1,4 @@
-class AddMp3infoToAssets < ActiveRecord::Migration
+class AddMp3infoToAssets < ActiveRecord::Migration[6.0]
   def self.up
     add_column :assets, :samplerate, :integer
     add_column :assets, :bitrate, :integer

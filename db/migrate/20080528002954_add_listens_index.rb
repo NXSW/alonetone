@@ -1,4 +1,4 @@
-class AddListensIndex < ActiveRecord::Migration
+class AddListensIndex < ActiveRecord::Migration[6.0]
   def self.up
     add_index :listens, :created_at
   end

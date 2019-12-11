@@ -1,4 +1,4 @@
-class AddLatLngToUser < ActiveRecord::Migration
+class AddLatLngToUser < ActiveRecord::Migration[6.0]
   def self.up
     add_column :users, :lat, :float
     add_column :users, :lng, :float

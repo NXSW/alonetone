@@ -1,4 +1,4 @@
-class Addbettercommentsindex < ActiveRecord::Migration[5.2]
+class Addbettercommentsindex < ActiveRecord::Migration[6.0]
   def change
     remove_index :comments, :created_at
     remove_index :comments, :is_spam

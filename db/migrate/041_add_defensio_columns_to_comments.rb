@@ -1,4 +1,4 @@
-class AddDefensioColumnsToComments < ActiveRecord::Migration
+class AddDefensioColumnsToComments < ActiveRecord::Migration[6.0]
   def self.up
     add_column :comments, :spam,      :boolean, :default => false
     add_column :comments, :spaminess, :float

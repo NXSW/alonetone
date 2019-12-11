@@ -1,4 +1,4 @@
-class CreateFeatures < ActiveRecord::Migration
+class CreateFeatures < ActiveRecord::Migration[6.0]
   def self.up
     create_table :features do |t|
       t.integer :featured_user_id

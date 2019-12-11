@@ -1,4 +1,4 @@
-class AddCommentsCountToAssets < ActiveRecord::Migration
+class AddCommentsCountToAssets < ActiveRecord::Migration[6.0]
   def self.up
     add_column :assets, :comments_count, :integer, :default => 0
     Asset.find(:all).each do |a|

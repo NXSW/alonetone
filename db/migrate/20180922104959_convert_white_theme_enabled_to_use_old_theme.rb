@@ -1,4 +1,4 @@
-class ConvertWhiteThemeEnabledToUseOldTheme < ActiveRecord::Migration[5.2]
+class ConvertWhiteThemeEnabledToUseOldTheme < ActiveRecord::Migration[6.0]
   def change
     rename_column :users, :white_theme_enabled, :use_old_theme
 

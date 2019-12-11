@@ -1,4 +1,4 @@
-class AddBrowserToUser < ActiveRecord::Migration
+class AddBrowserToUser < ActiveRecord::Migration[6.0]
   def self.up
     add_column :users, :browser, :string, :default => nil
   end

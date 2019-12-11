@@ -1,4 +1,4 @@
-class AddFbUserIds < ActiveRecord::Migration
+class AddFbUserIds < ActiveRecord::Migration[6.0]
   def self.up
     add_column :users, :fb_user_id, :integer
 

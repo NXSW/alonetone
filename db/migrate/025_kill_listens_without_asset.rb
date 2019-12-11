@@ -1,4 +1,4 @@
-class KillListensWithoutAsset < ActiveRecord::Migration
+class KillListensWithoutAsset < ActiveRecord::Migration[6.0]
   def self.up
     # I forgot to tell listens to destroy themselves when the asset is deleted
     Listen.find(:all).select{|l| !l.asset}.each(&:destroy)

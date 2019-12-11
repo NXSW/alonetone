@@ -1,4 +1,4 @@
-class CreateUserReports < ActiveRecord::Migration
+class CreateUserReports < ActiveRecord::Migration[6.0]
   def self.up
     create_table :user_reports do |t|
       t.integer :user_id

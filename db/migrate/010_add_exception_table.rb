@@ -1,4 +1,4 @@
-class AddExceptionTable < ActiveRecord::Migration
+class AddExceptionTable < ActiveRecord::Migration[6.0]
   def self.up
     create_table "logged_exceptions", :force => true do |t|
       t.column :exception_class, :string

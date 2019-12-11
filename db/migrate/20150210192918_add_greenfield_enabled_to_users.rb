@@ -1,4 +1,4 @@
-class AddGreenfieldEnabledToUsers < ActiveRecord::Migration
+class AddGreenfieldEnabledToUsers < ActiveRecord::Migration[6.0]
   def up
     add_column :users, :greenfield_enabled, :boolean, :default => false
 

@@ -1,4 +1,4 @@
-class AddPermalinkToUpdate < ActiveRecord::Migration
+class AddPermalinkToUpdate < ActiveRecord::Migration[6.0]
   def self.up
     add_column :updates, :permalink, :string   
     Update.all.each do |update|

@@ -1,4 +1,4 @@
-class UpdateToAuthlogic < ActiveRecord::Migration
+class UpdateToAuthlogic < ActiveRecord::Migration[6.0]
   def up
     change_column :users, :crypted_password, :string, :limit => 128,
       :null => false, :default => ""

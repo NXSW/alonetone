@@ -1,4 +1,4 @@
-class AddHotnessToTracks < ActiveRecord::Migration
+class AddHotnessToTracks < ActiveRecord::Migration[6.0]
   def self.up
     add_column :assets, :hotness, :float
   end

@@ -1,4 +1,4 @@
-class AddPermalinks < ActiveRecord::Migration
+class AddPermalinks < ActiveRecord::Migration[6.0]
   def self.up
     add_column :playlists, :permalink, :string
     add_column :assets, :permalink, :string

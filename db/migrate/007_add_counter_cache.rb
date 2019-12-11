@@ -1,4 +1,4 @@
-class AddCounterCache < ActiveRecord::Migration
+class AddCounterCache < ActiveRecord::Migration[6.0]
   def self.up
     add_column :users, :assets_count, :integer, :default => 0
   end

@@ -1,4 +1,4 @@
-class AddHtmLversionsToFormattedAttributes < ActiveRecord::Migration
+class AddHtmLversionsToFormattedAttributes < ActiveRecord::Migration[6.0]
   def self.up
     add_column :assets, :description_html, :text
     add_column :comments, :body_html, :text

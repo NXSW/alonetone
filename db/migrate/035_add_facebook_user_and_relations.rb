@@ -1,4 +1,4 @@
-class AddFacebookUserAndRelations < ActiveRecord::Migration
+class AddFacebookUserAndRelations < ActiveRecord::Migration[6.0]
   def self.up
     # out with the old
     remove_column :users, :fb_user_id

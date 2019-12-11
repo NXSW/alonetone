@@ -1,4 +1,4 @@
-class AddIPtoUsers < ActiveRecord::Migration
+class AddIPtoUsers < ActiveRecord::Migration[6.0]
   def self.up
     add_column :users, :ip, :string
   end

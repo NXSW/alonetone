@@ -1,4 +1,4 @@
-class AddIdentityUrl < ActiveRecord::Migration
+class AddIdentityUrl < ActiveRecord::Migration[6.0]
   def self.up
     add_column :users, :identity_url, :string
   end

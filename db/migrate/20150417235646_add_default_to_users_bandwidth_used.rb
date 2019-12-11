@@ -1,4 +1,4 @@
-class AddDefaultToUsersBandwidthUsed < ActiveRecord::Migration
+class AddDefaultToUsersBandwidthUsed < ActiveRecord::Migration[6.0]
   def up
     change_column :users, :bandwidth_used, :integer, :default => 0
     User.where('bandwidth_used IS NULL').update_all(:bandwidth_used => 0)

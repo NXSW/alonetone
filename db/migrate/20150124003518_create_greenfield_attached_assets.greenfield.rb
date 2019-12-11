@@ -1,5 +1,5 @@
 # This migration comes from greenfield (originally 20150123225257)
-class CreateGreenfieldAttachedAssets < ActiveRecord::Migration
+class CreateGreenfieldAttachedAssets < ActiveRecord::Migration[6.0]
   def change
     create_table :greenfield_attached_assets do |t|
       t.integer :post_id

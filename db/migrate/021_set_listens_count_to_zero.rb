@@ -1,4 +1,4 @@
-class SetListensCountToZero < ActiveRecord::Migration
+class SetListensCountToZero < ActiveRecord::Migration[6.0]
   def self.up
     Asset.find(:all).each do |a|
       a.listens_count = 0 if !a.listens_count

@@ -1,4 +1,4 @@
-class DropExcessJunk < ActiveRecord::Migration[5.1]
+class DropExcessJunk < ActiveRecord::Migration[6.0][5.1]
   def change
     drop_table :facebook_accounts
     drop_table :facebook_addables

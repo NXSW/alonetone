@@ -1,4 +1,4 @@
-class ChangeSettingsFromStringToText < ActiveRecord::Migration
+class ChangeSettingsFromStringToText < ActiveRecord::Migration[6.0]
   def self.up
     remove_column :users, :settings
     add_column :users, :settings, :text

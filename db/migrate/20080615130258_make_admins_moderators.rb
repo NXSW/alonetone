@@ -1,4 +1,4 @@
-class MakeAdminsModerators < ActiveRecord::Migration
+class MakeAdminsModerators < ActiveRecord::Migration[6.0]
   def self.up
     User.find_all_by_admin(true).each {|u| u.update_attribute :moderator, true}
   end

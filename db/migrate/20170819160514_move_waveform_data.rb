@@ -1,4 +1,4 @@
-class MoveWaveformData < ActiveRecord::Migration[5.1]
+class MoveWaveformData < ActiveRecord::Migration[6.0][5.1]
   def up
     change_column :audio_features, :waveform, :text, :limit => 16777215
     Asset.where('waveform is not null').each do |asset|

@@ -1,4 +1,4 @@
-class TweakListens < ActiveRecord::Migration
+class TweakListens < ActiveRecord::Migration[6.0]
   def self.up
     remove_column :listens, :user_id
     add_column :listens, :listener_id, :integer

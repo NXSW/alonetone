@@ -1,4 +1,4 @@
-class AddPerishableTokenForAuthlogic < ActiveRecord::Migration
+class AddPerishableTokenForAuthlogic < ActiveRecord::Migration[6.0]
   def up
     # activation stuff now handled by authlogic
     add_column :users, :perishable_token, :string, :default => nil

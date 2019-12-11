@@ -1,4 +1,4 @@
-class AddFieldsToAsset < ActiveRecord::Migration
+class AddFieldsToAsset < ActiveRecord::Migration[6.0]
   def self.up
     add_column :assets, :length, :integer
     add_column :assets, :album, :string

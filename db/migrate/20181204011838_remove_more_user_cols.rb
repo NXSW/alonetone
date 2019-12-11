@@ -1,4 +1,4 @@
-class RemoveMoreUserCols < ActiveRecord::Migration[5.2]
+class RemoveMoreUserCols < ActiveRecord::Migration[6.0]
   def change
     remove_column :users, :lat
     remove_column :users, :lng

@@ -1,4 +1,4 @@
-class SetPlaylistToAlbumOrMix < ActiveRecord::Migration
+class SetPlaylistToAlbumOrMix < ActiveRecord::Migration[6.0]
   def self.up
     # if any tracks in the playlist are not from the user, it is a mix
     Playlist.find(:all).each do |playlist|

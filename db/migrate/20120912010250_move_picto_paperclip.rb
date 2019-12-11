@@ -1,4 +1,4 @@
-class MovePictoPaperclip < ActiveRecord::Migration
+class MovePictoPaperclip < ActiveRecord::Migration[6.0]
   def up
     # before
     # t.integer  "size"

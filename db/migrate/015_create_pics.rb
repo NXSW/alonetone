@@ -1,4 +1,4 @@
-class CreatePics < ActiveRecord::Migration
+class CreatePics < ActiveRecord::Migration[6.0]
   def self.up
     create_table :pics do |t|
       t.integer :size

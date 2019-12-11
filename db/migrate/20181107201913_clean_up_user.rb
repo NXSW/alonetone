@@ -1,4 +1,4 @@
-class CleanUpUser < ActiveRecord::Migration[5.2]
+class CleanUpUser < ActiveRecord::Migration[6.0]
   def change
     puts "removing old crufty user columns"
     # remove_column :users, :lat

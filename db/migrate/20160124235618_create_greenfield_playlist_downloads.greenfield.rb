@@ -1,5 +1,5 @@
 # This migration comes from greenfield (originally 20160124210833)
-class CreateGreenfieldPlaylistDownloads < ActiveRecord::Migration
+class CreateGreenfieldPlaylistDownloads < ActiveRecord::Migration[6.0]
   def change
     create_table :greenfield_playlist_downloads do |t|
       t.string :title, null: false

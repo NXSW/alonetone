@@ -1,4 +1,4 @@
-class CreateForums < ActiveRecord::Migration
+class CreateForums < ActiveRecord::Migration[6.0]
   def self.up
     create_table "forums", :force => true do |t|
       t.integer "site_id"

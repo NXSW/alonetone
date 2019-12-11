@@ -1,4 +1,4 @@
-class FixItunesLinks < ActiveRecord::Migration
+class FixItunesLinks < ActiveRecord::Migration[6.0]
   def self.up
     old_link = 'phobos.apple.com/webobjects/mzstore.woa/wa/viewpodcast'
     new_link = 'phobos.apple.com/WebObjects/MZStore.woa/wa/viewPodcast'

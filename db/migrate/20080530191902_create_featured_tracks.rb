@@ -1,4 +1,4 @@
-class CreateFeaturedTracks < ActiveRecord::Migration
+class CreateFeaturedTracks < ActiveRecord::Migration[6.0]
   def self.up
     create_table :featured_tracks do |t|
       t.integer :position

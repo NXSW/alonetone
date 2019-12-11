@@ -1,4 +1,4 @@
-class TweakPlaylists < ActiveRecord::Migration
+class TweakPlaylists < ActiveRecord::Migration[6.0]
   def self.up
     Playlist.find_all_by_description('').each do |playlist|
       playlist.description = playlist.title

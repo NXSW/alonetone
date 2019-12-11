@@ -1,4 +1,4 @@
-class ReplaceStalkingsWithFollowers < ActiveRecord::Migration
+class ReplaceStalkingsWithFollowers < ActiveRecord::Migration[6.0]
   def self.up
     drop_table :stalkings
     create_table :followings do |t|

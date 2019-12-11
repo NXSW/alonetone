@@ -1,4 +1,4 @@
-class AddWhiteThemeToggleToUsers < ActiveRecord::Migration[5.1]
+class AddWhiteThemeToggleToUsers < ActiveRecord::Migration[6.0][5.1]
   def change
     remove_column :users, :last_session_at
     remove_column :users, :remember_token

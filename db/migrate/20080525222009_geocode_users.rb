@@ -1,4 +1,4 @@
-class GeocodeUsers < ActiveRecord::Migration
+class GeocodeUsers < ActiveRecord::Migration[6.0]
   def self.up
     User.with_location.each{|u| geocode_address(user) }
   end

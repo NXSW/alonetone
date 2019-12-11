@@ -1,4 +1,4 @@
-class MoveAssetToPaperclip < ActiveRecord::Migration
+class MoveAssetToPaperclip < ActiveRecord::Migration[6.0]
   def up
     # The old schema....
     

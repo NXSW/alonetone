@@ -1,4 +1,4 @@
-class AddFavCountToAsset < ActiveRecord::Migration
+class AddFavCountToAsset < ActiveRecord::Migration[6.0]
   def self.up
     add_column :assets, :favorites_count, :integer, :default => 0
   end

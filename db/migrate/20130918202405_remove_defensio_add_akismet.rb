@@ -1,4 +1,4 @@
-class RemoveDefensioAddAkismet < ActiveRecord::Migration
+class RemoveDefensioAddAkismet < ActiveRecord::Migration[6.0]
   def change
     # Rakismet uses a method called spam?, lets accommadate
     rename_column :comments, :spam, :is_spam

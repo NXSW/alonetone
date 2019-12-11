@@ -1,4 +1,4 @@
-class CreateFacebookAddables < ActiveRecord::Migration
+class CreateFacebookAddables < ActiveRecord::Migration[6.0]
   def self.up
     create_table :facebook_addables do |t|
       t.string :profile_chunk_type

@@ -1,4 +1,4 @@
-class PimpUpUsers < ActiveRecord::Migration
+class PimpUpUsers < ActiveRecord::Migration[6.0]
   def self.up
     add_column :users, :playlists_count, :integer, :default => 0
     add_column :users, :website, :string

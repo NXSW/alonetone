@@ -1,4 +1,4 @@
-class ChangeHashToCryptedPassword < ActiveRecord::Migration
+class ChangeHashToCryptedPassword < ActiveRecord::Migration[6.0]
   def self.up
     remove_column :users, :password_hash
     add_column :users, :crypted_password, :string, :limit => 40

@@ -1,4 +1,4 @@
-class AddFavoriteToTrackAndPlaylist < ActiveRecord::Migration
+class AddFavoriteToTrackAndPlaylist < ActiveRecord::Migration[6.0]
   def self.up
     add_column :tracks, :is_favorite, :boolean, :default => false
     add_column :playlists, :is_favorite, :boolean, :default => false

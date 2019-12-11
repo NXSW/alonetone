@@ -1,4 +1,4 @@
-class AddIndexesToAsset < ActiveRecord::Migration
+class AddIndexesToAsset < ActiveRecord::Migration[6.0]
   def change
     add_index "assets", "hotness"
   end

@@ -1,4 +1,4 @@
-class AddDefensioColumnsToUserReports < ActiveRecord::Migration
+class AddDefensioColumnsToUserReports < ActiveRecord::Migration[6.0]
   def self.up
     add_column :user_reports, :spam,      :boolean, :default => false
     add_column :user_reports, :spaminess, :float

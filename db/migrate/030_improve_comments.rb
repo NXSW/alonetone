@@ -1,4 +1,4 @@
-class ImproveComments < ActiveRecord::Migration
+class ImproveComments < ActiveRecord::Migration[6.0]
   def self.up
     remove_column :comments, :owner_id
     

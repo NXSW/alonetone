@@ -1,4 +1,4 @@
-class CreateListens < ActiveRecord::Migration
+class CreateListens < ActiveRecord::Migration[6.0]
   def self.up
     create_table :listens do |t|
       t.integer :asset_id

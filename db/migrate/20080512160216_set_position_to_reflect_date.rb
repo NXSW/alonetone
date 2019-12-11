@@ -1,4 +1,4 @@
-class SetPositionToReflectDate < ActiveRecord::Migration
+class SetPositionToReflectDate < ActiveRecord::Migration[6.0]
   def self.up
     User.find(:all).each do |user|
       if user.playlists.size > 0

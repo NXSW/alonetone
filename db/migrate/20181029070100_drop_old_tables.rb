@@ -1,4 +1,4 @@
-class DropOldTables < ActiveRecord::Migration[5.2]
+class DropOldTables < ActiveRecord::Migration[6.0]
   def change
     drop_table :facebook_addables, if_exists: true
     drop_table :facebook_accounts, if_exists: true

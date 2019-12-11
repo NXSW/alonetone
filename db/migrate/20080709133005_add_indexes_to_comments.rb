@@ -1,4 +1,4 @@
-class AddIndexesToComments < ActiveRecord::Migration
+class AddIndexesToComments < ActiveRecord::Migration[6.0]
   def self.up
     add_index :comments, [:commentable_id, :commentable_type]
     add_index :comments, :spam

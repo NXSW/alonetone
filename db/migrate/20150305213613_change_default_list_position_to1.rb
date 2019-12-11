@@ -1,4 +1,4 @@
-class ChangeDefaultListPositionTo1 < ActiveRecord::Migration
+class ChangeDefaultListPositionTo1 < ActiveRecord::Migration[6.0]
   def change
     list_models = [FeaturedTrack, Forum, Playlist,
                    Track, Greenfield::PlaylistTrack]

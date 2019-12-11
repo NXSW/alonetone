@@ -1,4 +1,4 @@
-class AddStalkings < ActiveRecord::Migration
+class AddStalkings < ActiveRecord::Migration[6.0]
   def self.up
     create_table :stalkings do |t|
       t.integer :stalker_id

@@ -1,4 +1,4 @@
-class FleshOutTrack < ActiveRecord::Migration
+class FleshOutTrack < ActiveRecord::Migration[6.0]
   def self.up
     add_column :assets, :description, :string
     add_column :assets, :credits, :text

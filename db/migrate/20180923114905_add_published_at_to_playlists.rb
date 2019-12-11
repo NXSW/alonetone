@@ -1,4 +1,4 @@
-class AddPublishedAtToPlaylists < ActiveRecord::Migration[5.2]
+class AddPublishedAtToPlaylists < ActiveRecord::Migration[6.0]
   def change
     add_column :playlists, :published_at, :datetime
 

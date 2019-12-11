@@ -1,4 +1,4 @@
-class FleshOutUser < ActiveRecord::Migration
+class FleshOutUser < ActiveRecord::Migration[6.0]
   def self.up
     add_column :users, :country, :string
     add_column :users, :city, :string

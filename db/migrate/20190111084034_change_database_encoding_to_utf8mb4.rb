@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class ChangeDatabaseEncodingToUtf8mb4 < ActiveRecord::Migration[5.2]
+class ChangeDatabaseEncodingToUtf8mb4 < ActiveRecord::Migration[6.0]
   def up
     change_encoding('utf8mb4')
   end

@@ -1,4 +1,4 @@
-class CreateUpdates < ActiveRecord::Migration
+class CreateUpdates < ActiveRecord::Migration[6.0]
   def self.up
     create_table :updates do |t|
       t.string :title

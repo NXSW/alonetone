@@ -1,4 +1,4 @@
-class AddItunesToUser < ActiveRecord::Migration
+class AddItunesToUser < ActiveRecord::Migration[6.0]
   def self.up
     add_column :users, :itunes, :string
   end

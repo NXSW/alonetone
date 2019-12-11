@@ -1,4 +1,4 @@
-class AddGroups < ActiveRecord::Migration
+class AddGroups < ActiveRecord::Migration[6.0]
   def self.up
   end
 

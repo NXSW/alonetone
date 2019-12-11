@@ -1,4 +1,4 @@
-class AddPrivateToComments < ActiveRecord::Migration
+class AddPrivateToComments < ActiveRecord::Migration[6.0]
   def self.up
     add_column :comments, :private, :boolean, :default => false
   end

@@ -1,4 +1,4 @@
-class CreateSourceFiles < ActiveRecord::Migration
+class CreateSourceFiles < ActiveRecord::Migration[6.0]
   def self.up
     create_table :source_files do |t|
       t.string   "content_type"

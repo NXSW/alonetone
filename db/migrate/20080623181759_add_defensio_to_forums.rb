@@ -1,4 +1,4 @@
-class AddDefensioToForums < ActiveRecord::Migration
+class AddDefensioToForums < ActiveRecord::Migration[6.0]
   def self.up
     add_column :topics, :spam, :boolean, :default => false
     add_column :topics, :spaminess, :float
